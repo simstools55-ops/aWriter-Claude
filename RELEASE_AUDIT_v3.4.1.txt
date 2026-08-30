@@ -1,0 +1,12 @@
+SIMS Writer Claude v3.4.1 Release Audit
+Date: 2026-08-29
+
+Version policy: PATCH
+Reason: synchronize the Claude package and complete Personal Knowledge separation.
+
+Checks
+- Focused Claude regression suite: PASS — 4 passed
+- Known tenant/blog markers: PASS
+- Concrete A000xxx identifiers: PASS — none retained
+- Shared compatibility baseline: unchanged
+- Manual Claude workflow and Writer contracts: unchanged

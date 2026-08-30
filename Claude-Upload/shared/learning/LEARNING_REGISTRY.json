@@ -1,0 +1,52 @@
+{
+  "registry_version": "1.2",
+  "shared_version": "3.5.1",
+  "record_id_format": "LR-YYYY-NNNN",
+  "allowed_classifications": [
+    "ARTICLE_SPECIFIC",
+    "PATTERN_CANDIDATE",
+    "MAPPING_DEFECT",
+    "VALIDATION_DEFECT",
+    "PREFERENCE_ONLY"
+  ],
+  "allowed_statuses": [
+    "NEW",
+    "TRIAGED",
+    "ACCEPTED",
+    "REJECTED",
+    "DUPLICATE",
+    "IMPLEMENTED",
+    "VERIFIED",
+    "CLOSED"
+  ],
+  "required_fields": [
+    "id",
+    "observed_at",
+    "article_id",
+    "observation",
+    "classification",
+    "status",
+    "decision",
+    "owner",
+    "product_scope",
+    "canonical_rule",
+    "regression_fixture"
+  ],
+  "records": [],
+  "scope_policy": {
+    "product_neutral_only": true,
+    "tenant_specific_records_location": "external Personal Editorial Knowledge",
+    "shared_accepts": [
+      "generalized rules",
+      "patterns",
+      "mappings",
+      "validation defects",
+      "regression fixtures"
+    ],
+    "shared_rejects": [
+      "real article IDs",
+      "site-specific observations",
+      "tenant/blog-specific operational history"
+    ]
+  }
+}

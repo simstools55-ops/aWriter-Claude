@@ -1,0 +1,12 @@
+{
+  "product_code": "WRITER",
+  "product_name": "aWriter",
+  "repository_name": "SIMS-Writer-Claude",
+  "repository_type": "CLAUDE_PACKAGE",
+  "runtime": "CLAUDE_PROJECT",
+  "package_version": "3.5.3",
+  "product_compatibility": "3.5.3",
+  "platform_compatibility": "1.x",
+  "shared_version": "3.5.1",
+  "notes": "PATCH: user-facing product naming consolidated to aWriter / SIMS Manager while preserving internal contracts; internal-link After gate retained; Shared v3.5.1 baseline preserved."
+}

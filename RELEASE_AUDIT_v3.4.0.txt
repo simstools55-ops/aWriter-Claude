@@ -1,0 +1,14 @@
+SIMS Writer Claude v3.4.0 Release Audit
+Date: 2026-08-29
+
+Version policy: MINOR
+Reason: Personal Knowledge separation from distributable manual-Claude package.
+
+Checks
+- Focused Claude package tests: PASS — 4 passed
+- Known tenant/blog markers: PASS
+- Embedded tenant-specific learning registries cleared: PASS
+- Product/package version: 3.4.0
+- Shared compatibility baseline: 3.5.1
+- Manual Claude Project workflow: preserved
+- External AI API integration: absent

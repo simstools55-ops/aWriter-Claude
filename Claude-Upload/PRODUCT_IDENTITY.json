@@ -1,0 +1,12 @@
+{
+  "product_code": "WRITER",
+  "product_name": "aWriter",
+  "repository_name": "SIMS-Writer-Claude",
+  "repository_type": "CLAUDE_PACKAGE",
+  "runtime": "CLAUDE_PROJECT",
+  "package_version": "3.5.3",
+  "product_compatibility": "3.5.3",
+  "platform_compatibility": "1.x",
+  "shared_version": "3.5.1",
+  "notes": "PATCH: internal-link After must contain an actual clickable link target; Shared v3.5.1 baseline preserved."
+}
