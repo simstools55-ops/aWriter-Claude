@@ -26,3 +26,7 @@ EvidenceとPublication DecisionをStrategyが上書きしてはいけない。UX
 - SERP Gap Reportには3〜5行の利用者向けDecision Traceを付ける。
 - USER_DECISIONには2〜5行のDecision Traceを付け、なぜ公開OKにしなかったかを平易に示す。
 - 生の思考過程、内部スコア、競合URL一覧は表示しない。
+
+## Rich Copy Projection v3.6.0
+UX Filter may project links and tables into rendered Human Layer forms for WYSIWYG copy. This projection must not change edit semantics, destination URLs, anchors, table cells, publication decisions, or Machine Layer implementation markup.
+

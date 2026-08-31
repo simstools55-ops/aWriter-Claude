@@ -62,3 +62,13 @@
 ## Real Article Final Gate v2.4
 
 `runtime/real-article-final-gate-v2.4.md` をPublication Integrity Gateの直後に実行する。実記事由来でないBefore、要約After、Search Console需要だけの事実断定、局所安全化後に本文へ残る危険主張をFAILとする。
+
+## Rich Copy Gate v3.6.0
+- Human Layerの表がコード文字列ではなくレンダリング済み表として表示されることを許可する。
+- Human Layerの内部リンクが生のHTML/Markdown記法ではなく、クリック可能なレンダリング済みアンカーとして表示されることを許可する。
+- リンクまたは表を含むHuman Layerのコピー対象Afterをコードフェンスまたはblockquoteで囲んだ場合はFAIL。
+- Machine JSON側の内部リンクはdestination URLと元記事形式に適合するlink markupを従来どおり検証する。
+- Human LayerとMachine Layerでは文章の意味、アンカーテキスト、destination URL、表の見出し・セル内容・順序を照合する。markup/rendering表現の完全一致は要求しない。
+- 意味、アンカー、destination URL、表内容が異なる場合はFAIL。
+- 明示的な利用者要求がないのにHTML版・Markdown版・見たまま版を並列提示した場合はFAIL。
+

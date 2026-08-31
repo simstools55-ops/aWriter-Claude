@@ -1,4 +1,4 @@
-# aWriter-Claude v3.5.3
+# aWriter-Claude v3.6.0
 
 このフォルダーは利用者向けClaude Project配布物です。
 Claude Projectへこのフォルダー内のファイルを使用してください。

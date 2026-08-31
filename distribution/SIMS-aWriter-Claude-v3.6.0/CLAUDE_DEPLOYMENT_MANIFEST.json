@@ -1,7 +1,7 @@
 {
   "deployment_manifest_version": "1.0",
   "package_name": "SIMS-Writer-Claude",
-  "package_version": "3.5.1",
+  "package_version": "3.6.0",
   "product_code": "WRITER",
   "shared_version": "3.5.1",
   "platform_compatibility": "1.x",
@@ -22,5 +22,5 @@
     "shared/VERSION",
     "legacy Shared snapshots earlier than 3.5.0"
   ],
-  "generated_at": "2026-08-08T06:57:00+09:00"
+  "generated_at": "2026-09-01T00:00:00+09:00"
 }

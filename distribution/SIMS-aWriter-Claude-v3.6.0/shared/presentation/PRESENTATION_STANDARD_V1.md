@@ -32,3 +32,13 @@ DOCTOR_REFERRAL_TREATMENT等の経路であっても、通常Writerより利用�
 - Creator: 記事作成結果 / 公開前確認 / 完成記事
 - Merge: 統合判断 / Primary / Preservation / 作業順序 / 注意事項
 - SBM: 次に実行すべき操作と状態を人間向けに表示
+
+## Rich-copy projection (v3.6.0)
+WriterのHuman Layerでリンクまたは表を含むAfterを提示する場合、WYSIWYGへコピーしやすいレンダリング済み完成形を優先する。
+
+- ordinary text → complete text
+- internal link → clickable rendered anchor
+- table → rendered table
+
+リンクまたは表のHuman Layerコピー対象部分はコードフェンスおよびblockquoteで囲まない。Machine Layerで必要なmarkupは保持してよいが、Machine markupをそのままHuman Layerの作業形式にする必要はない。Human/Presentation変換によって文章の意味、リンク先URL、アンカーテキスト、表の見出し・セル内容・順序を変更してはならない。markup/rendering表現の違いだけを不一致とみなしてはならない。
+

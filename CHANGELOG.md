@@ -1,3 +1,8 @@
+## v3.6.0 - 2026-09-01
+- Added WYSIWYG rich-copy Human Layer projection for rendered tables and clickable internal links.
+- Kept Machine Layer link markup/URL validation and semantic synchronization.
+- Prevented rich-copy payloads from being wrapped in code fences or blockquotes.
+
 # Changelog
 
 ## v3.5.1 - 2026-08-30

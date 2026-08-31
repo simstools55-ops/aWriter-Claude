@@ -4,9 +4,10 @@
   "repository_name": "SIMS-Writer-Claude",
   "repository_type": "CLAUDE_PACKAGE",
   "runtime": "CLAUDE_PROJECT",
-  "package_version": "3.5.3",
-  "product_compatibility": "3.5.3",
+  "package_version": "3.6.0",
+  "product_compatibility": "3.6.0",
   "platform_compatibility": "1.x",
   "shared_version": "3.5.1",
-  "notes": "PATCH: internal-link After must contain an actual clickable link target; Shared v3.5.1 baseline preserved."
+  "notes": "MINOR: Human Layer rich-copy projection for WYSIWYG/visual editors; rendered tables and clickable internal links remain semantically synchronized with Machine Layer markup.",
+  "release_status": "MINOR"
 }

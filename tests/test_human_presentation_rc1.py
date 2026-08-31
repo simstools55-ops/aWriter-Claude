@@ -2,7 +2,7 @@ from pathlib import Path
 ROOT=Path(__file__).resolve().parents[1]
 
 def test_versions():
-    assert (ROOT/'VERSION').read_text(encoding='utf-8').strip()=='3.5.3'
+    assert (ROOT/'VERSION').read_text(encoding='utf-8').strip()=='3.6.0'
     assert (ROOT/'SHARED_VERSION').read_text(encoding='utf-8').strip()=='3.5.1'
 
 def test_instructions_require_doctor_before_after_and_hide_machine_terms():
