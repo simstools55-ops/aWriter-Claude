@@ -110,10 +110,14 @@ Claude-Upload/runtime/serp-analysis-input-contract-v2.0.md
 Claude-Upload/runtime/serp-evidence-gate-v2.0.md
 Claude-Upload/schemas/SIMS_FEEDBACK_V2.schema.json
 Claude-Upload/schemas/SIMS_WRITER_TREATMENT_RESULT_V1.schema.json
+Claude-Upload/shared-presentation/HUMAN_EXPERIENCE_ARCHITECTURE_V1.md
+Claude-Upload/shared-presentation/HUMAN_OUTPUT_POLICY_V1.md
+Claude-Upload/shared-presentation/HUMAN_USABILITY_GATE_V1.md
+Claude-Upload/shared-presentation/MACHINE_OUTPUT_POLICY_V1.md
+Claude-Upload/shared-presentation/PRESENTATION_STANDARD_V1.md
 Claude-Upload/shared/.gitignore
 Claude-Upload/shared/CHANGELOG.md
 Claude-Upload/shared/COMPATIBILITY_MATRIX.md
-Claude-Upload/shared/FILE_MANIFEST.txt
 Claude-Upload/shared/LICENSE
 Claude-Upload/shared/PLATFORM_MANIFEST.json
 Claude-Upload/shared/PRODUCT_IDENTITY.json
@@ -154,7 +158,6 @@ Claude-Upload/shared/RELEASE_NOTES_v3.3.0.md
 Claude-Upload/shared/RELEASE_NOTES_v3.4.0.md
 Claude-Upload/shared/RELEASE_NOTES_v3.5.0.md
 Claude-Upload/shared/RELEASE_NOTES_v3.5.1.md
-Claude-Upload/shared/SHA256SUMS.txt
 Claude-Upload/shared/VERSION
 Claude-Upload/shared/architecture/CLAUDE_OPERATIONS.md
 Claude-Upload/shared/architecture/END_TO_END_WORKFLOW.md
@@ -269,7 +272,6 @@ Claude-Upload/shared/learning/LEARNING_INTAKE_TEMPLATE.md
 Claude-Upload/shared/learning/LEARNING_REGISTRY.json
 Claude-Upload/shared/learning/LEARNING_SPRINT_PLAYBOOK.md
 Claude-Upload/shared/learning/README.md
-Claude-Upload/shared/manifest.json
 Claude-Upload/shared/mappings/article-creator/application-mapping.md
 Claude-Upload/shared/mappings/writer/application-mapping.md
 Claude-Upload/shared/patterns/answer-first-pattern.md
@@ -386,11 +388,6 @@ Claude-Upload/shared/validation/seo-critical-auto-repair-validation.md
 Claude-Upload/shared/validation/shared-knowledge-validation.md
 Claude-Upload/shared/validation/temporal-lifecycle-validation.md
 Claude-Upload/shared/validation/validation-message-integrity.md
-Claude-Upload/shared-presentation/HUMAN_EXPERIENCE_ARCHITECTURE_V1.md
-Claude-Upload/shared-presentation/HUMAN_OUTPUT_POLICY_V1.md
-Claude-Upload/shared-presentation/HUMAN_USABILITY_GATE_V1.md
-Claude-Upload/shared-presentation/MACHINE_OUTPUT_POLICY_V1.md
-Claude-Upload/shared-presentation/PRESENTATION_STANDARD_V1.md
 Claude-Upload/templates/IMPROVEMENT_REQUEST_TEMPLATE.json
 Claude-Upload/templates/response-template.md
 DEPLOYMENT_TEST.md
@@ -403,7 +400,7 @@ PROJECT_INSTRUCTIONS_TO_PASTE.md
 PROJECT_RESET_CHECKLIST.md
 PUBLICATION_PIPELINE_LOCK.md
 QA_FINAL_REVIEW_CHECKLIST.md
-QA_v3.6.0.md
+QA_v3.6.1.md
 README.md
 RELEASE_AUDIT_v3.4.0.txt
 RELEASE_AUDIT_v3.4.1.txt
@@ -452,6 +449,7 @@ RELEASE_NOTES_v3.5.1.md
 RELEASE_NOTES_v3.5.2.md
 RELEASE_NOTES_v3.5.3.md
 RELEASE_NOTES_v3.6.0.md
+RELEASE_NOTES_v3.6.1.md
 SELF_QA_RUNTIME_INSTRUCTIONS.md
 SETUP_GUIDE.md
 SETUP_GUIDE_v3.2.0.md
@@ -618,10 +616,14 @@ distribution/SIMS-aWriter-Claude-v3.6.0/runtime/serp-analysis-input-contract-v2.
 distribution/SIMS-aWriter-Claude-v3.6.0/runtime/serp-evidence-gate-v2.0.md
 distribution/SIMS-aWriter-Claude-v3.6.0/schemas/SIMS_FEEDBACK_V2.schema.json
 distribution/SIMS-aWriter-Claude-v3.6.0/schemas/SIMS_WRITER_TREATMENT_RESULT_V1.schema.json
+distribution/SIMS-aWriter-Claude-v3.6.0/shared-presentation/HUMAN_EXPERIENCE_ARCHITECTURE_V1.md
+distribution/SIMS-aWriter-Claude-v3.6.0/shared-presentation/HUMAN_OUTPUT_POLICY_V1.md
+distribution/SIMS-aWriter-Claude-v3.6.0/shared-presentation/HUMAN_USABILITY_GATE_V1.md
+distribution/SIMS-aWriter-Claude-v3.6.0/shared-presentation/MACHINE_OUTPUT_POLICY_V1.md
+distribution/SIMS-aWriter-Claude-v3.6.0/shared-presentation/PRESENTATION_STANDARD_V1.md
 distribution/SIMS-aWriter-Claude-v3.6.0/shared/.gitignore
 distribution/SIMS-aWriter-Claude-v3.6.0/shared/CHANGELOG.md
 distribution/SIMS-aWriter-Claude-v3.6.0/shared/COMPATIBILITY_MATRIX.md
-distribution/SIMS-aWriter-Claude-v3.6.0/shared/FILE_MANIFEST.txt
 distribution/SIMS-aWriter-Claude-v3.6.0/shared/LICENSE
 distribution/SIMS-aWriter-Claude-v3.6.0/shared/PLATFORM_MANIFEST.json
 distribution/SIMS-aWriter-Claude-v3.6.0/shared/PRODUCT_IDENTITY.json
@@ -662,7 +664,6 @@ distribution/SIMS-aWriter-Claude-v3.6.0/shared/RELEASE_NOTES_v3.3.0.md
 distribution/SIMS-aWriter-Claude-v3.6.0/shared/RELEASE_NOTES_v3.4.0.md
 distribution/SIMS-aWriter-Claude-v3.6.0/shared/RELEASE_NOTES_v3.5.0.md
 distribution/SIMS-aWriter-Claude-v3.6.0/shared/RELEASE_NOTES_v3.5.1.md
-distribution/SIMS-aWriter-Claude-v3.6.0/shared/SHA256SUMS.txt
 distribution/SIMS-aWriter-Claude-v3.6.0/shared/VERSION
 distribution/SIMS-aWriter-Claude-v3.6.0/shared/architecture/CLAUDE_OPERATIONS.md
 distribution/SIMS-aWriter-Claude-v3.6.0/shared/architecture/END_TO_END_WORKFLOW.md
@@ -777,7 +778,6 @@ distribution/SIMS-aWriter-Claude-v3.6.0/shared/learning/LEARNING_INTAKE_TEMPLATE
 distribution/SIMS-aWriter-Claude-v3.6.0/shared/learning/LEARNING_REGISTRY.json
 distribution/SIMS-aWriter-Claude-v3.6.0/shared/learning/LEARNING_SPRINT_PLAYBOOK.md
 distribution/SIMS-aWriter-Claude-v3.6.0/shared/learning/README.md
-distribution/SIMS-aWriter-Claude-v3.6.0/shared/manifest.json
 distribution/SIMS-aWriter-Claude-v3.6.0/shared/mappings/article-creator/application-mapping.md
 distribution/SIMS-aWriter-Claude-v3.6.0/shared/mappings/writer/application-mapping.md
 distribution/SIMS-aWriter-Claude-v3.6.0/shared/patterns/answer-first-pattern.md
@@ -894,11 +894,6 @@ distribution/SIMS-aWriter-Claude-v3.6.0/shared/validation/seo-critical-auto-repa
 distribution/SIMS-aWriter-Claude-v3.6.0/shared/validation/shared-knowledge-validation.md
 distribution/SIMS-aWriter-Claude-v3.6.0/shared/validation/temporal-lifecycle-validation.md
 distribution/SIMS-aWriter-Claude-v3.6.0/shared/validation/validation-message-integrity.md
-distribution/SIMS-aWriter-Claude-v3.6.0/shared-presentation/HUMAN_EXPERIENCE_ARCHITECTURE_V1.md
-distribution/SIMS-aWriter-Claude-v3.6.0/shared-presentation/HUMAN_OUTPUT_POLICY_V1.md
-distribution/SIMS-aWriter-Claude-v3.6.0/shared-presentation/HUMAN_USABILITY_GATE_V1.md
-distribution/SIMS-aWriter-Claude-v3.6.0/shared-presentation/MACHINE_OUTPUT_POLICY_V1.md
-distribution/SIMS-aWriter-Claude-v3.6.0/shared-presentation/PRESENTATION_STANDARD_V1.md
 distribution/SIMS-aWriter-Claude-v3.6.0/templates/IMPROVEMENT_REQUEST_TEMPLATE.json
 distribution/SIMS-aWriter-Claude-v3.6.0/templates/response-template.md
 examples/A900043-doctor-referral-contract-regression.json
@@ -947,7 +942,6 @@ schemas/SIMS_WRITER_TREATMENT_RESULT_V1.schema.json
 shared/.gitignore
 shared/CHANGELOG.md
 shared/COMPATIBILITY_MATRIX.md
-shared/FILE_MANIFEST.txt
 shared/LICENSE
 shared/PLATFORM_MANIFEST.json
 shared/PRODUCT_IDENTITY.json
@@ -988,7 +982,6 @@ shared/RELEASE_NOTES_v3.3.0.md
 shared/RELEASE_NOTES_v3.4.0.md
 shared/RELEASE_NOTES_v3.5.0.md
 shared/RELEASE_NOTES_v3.5.1.md
-shared/SHA256SUMS.txt
 shared/VERSION
 shared/architecture/CLAUDE_OPERATIONS.md
 shared/architecture/END_TO_END_WORKFLOW.md
@@ -1103,7 +1096,6 @@ shared/learning/LEARNING_INTAKE_TEMPLATE.md
 shared/learning/LEARNING_REGISTRY.json
 shared/learning/LEARNING_SPRINT_PLAYBOOK.md
 shared/learning/README.md
-shared/manifest.json
 shared/mappings/article-creator/application-mapping.md
 shared/mappings/writer/application-mapping.md
 shared/patterns/answer-first-pattern.md

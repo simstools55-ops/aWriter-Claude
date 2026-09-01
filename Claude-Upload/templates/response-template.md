@@ -47,7 +47,7 @@ SBM登録など、利用者が次に行う操作を示す。
 - `SIMS_WRITER_TREATMENT_REQUEST_V1` / `DOCTOR_REFERRAL_TREATMENT`：`SIMS_WRITER_TREATMENT_RESULT_V1` Contract 1.0
 - 入力の`return_contract`がある場合は最優先。Doctor Referral時に`SIMS_FEEDBACK_V2`を返してはならない。
 
-### Rich Copy / 見たままモード対応（v3.6.0）
+### Rich Copy / 見たままモード対応（v3.6.1）
 AfterのHuman Layer表示は、利用者が原則そのままWYSIWYG編集画面へコピーできる完成形とする。
 
 - 通常文章：完成した変更後文章を表示する。
@@ -60,4 +60,14 @@ AfterのHuman Layer表示は、利用者が原則そのままWYSIWYG編集画面
 
 #### 表を変更・追加する場合のAfter表示例
 `**After**` の直後に、コードフェンスやblockquoteを使わず、通常のMarkdown表を置いてチャットUIに実表としてレンダリングさせる。利用者に見える完成形は表そのものとし、pipe文字列を文章として見せない。
+
+### Human Layer完成表示ゲート（v3.6.1 実運用補強）
+Human LayerのPUBLIC_OKに表示するBefore/Afterは、はてなブログ等のWYSIWYG編集画面へコピーするための**完成表示**とする。
+
+- 改行：`<br>`、`<br/>`、`<br />`、文字としての`\n`/`/n`を見せず、実際の改行・段落としてレンダリングする。
+- 箇条書き：`<br>・項目`等の連結文字列ではなく、実際の箇条書きとしてレンダリングする。
+- 表全体だけでなく、表の1行・1セル・一部分の変更も表変更として扱い、Human Layerでは差し替え可能な実表をレンダリングする。pipe区切りの1行テキストで代用しない。
+- 内部リンク：クリック可能なレンダリング済みアンカーとして表示する。
+- Machine Result JSON内では`\n`、HTML、元記事形式のリンクmarkup等を保持してよい。
+- Human LayerとMachine Layerは意味・順序・リンク先・アンカー・表セル内容を一致させるが、表示用markupのbyte一致は要求しない。
 

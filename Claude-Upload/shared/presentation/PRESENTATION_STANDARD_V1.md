@@ -33,7 +33,7 @@ DOCTOR_REFERRAL_TREATMENT等の経路であっても、通常Writerより利用�
 - Merge: 統合判断 / Primary / Preservation / 作業順序 / 注意事項
 - SBM: 次に実行すべき操作と状態を人間向けに表示
 
-## Rich-copy projection (v3.6.0)
+## Rich-copy projection (v3.6.1)
 WriterのHuman Layerでリンクまたは表を含むAfterを提示する場合、WYSIWYGへ直接コピーできるレンダリング済み完成形を必須とする。
 
 - ordinary text → complete text
@@ -44,4 +44,7 @@ WriterのHuman Layerでリンクまたは表を含むAfterを提示する場合�
 表を変更・追加するPUBLIC_OKでは、Human LayerのAfterがチャットUI上で**実際の表としてレンダリングされていること**を完成条件とする。全角/半角pipeを区切り文字として並べただけの疑似表は、見たままモードで表構造を保持できないため完成形として扱わない。
 
 リンクまたは表のHuman Layerコピー対象部分はコードフェンスおよびblockquoteで囲まない。Machine Layerで必要なmarkupは保持してよいが、Machine markupをそのままHuman Layerの作業形式にする必要はない。Human/Presentation変換によって文章の意味、リンク先URL、アンカーテキスト、表の見出し・セル内容・順序を変更してはならない。markup/rendering表現の違いだけを不一致とみなしてはならない。
+
+### 完成表示の範囲（v3.6.1 実運用補強）
+Rich-copy projectionは表・リンクだけでなく、改行、段落、箇条書き、表の部分変更にも適用する。Human Layerに`<br>`や文字としての`\n`/`/n`を露出させず、表示構造へ変換する。表の1行・1セルだけを変更する場合も、利用者が差し替えできる実表として提示する。Machine Layerのmarkup/escape表現は維持してよい。
 

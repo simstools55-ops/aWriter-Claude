@@ -63,7 +63,7 @@
 
 `runtime/real-article-final-gate-v2.4.md` をPublication Integrity Gateの直後に実行する。実記事由来でないBefore、要約After、Search Console需要だけの事実断定、局所安全化後に本文へ残る危険主張をFAILとする。
 
-## Rich Copy Gate v3.6.0
+## Rich Copy Gate v3.6.1
 - 表を変更・追加するPUBLIC_OKで、Human LayerのAfterがチャットUI上の**実際のレンダリング済み表**になっていなければFAIL。
 - Human Layerの内部リンクが生のHTML/Markdown記法ではなく、クリック可能なレンダリング済みアンカーとして表示されることを許可する。
 - `A｜B｜C`、`A|B|C`等のpipe区切り文字列を表の完成形として表示した場合はFAIL。Markdown表のソースをコードフェンス内に置いて利用者へコピーさせる場合もFAIL。
@@ -72,4 +72,7 @@
 - Human LayerとMachine Layerでは文章の意味、アンカーテキスト、destination URL、表の見出し・セル内容・順序を照合する。markup/rendering表現の完全一致は要求しない。
 - 意味、アンカー、destination URL、表内容が異なる場合はFAIL。
 - 明示的な利用者要求がないのにHTML版・Markdown版・見たまま版を並列提示した場合はFAIL。
+- Human Layerのコピー対象本文に`<br>`/`<br/>`/`<br />`、文字としての`\n`または`/n`が露出していた場合はFAIL。実改行・段落・箇条書きへ投影する。
+- 表全体だけでなく、表の1行・1セル・部分差し替えもRich Copy Gateの対象。Human Layerでpipe区切り行や改行文字列として代用した場合はFAIL。
+- 箇条書き・段落構造を`<br>`連結文字列として提示した場合はFAIL。Human Layerでは実際の箇条書き・段落としてレンダリングする。
 

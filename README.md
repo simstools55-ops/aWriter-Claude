@@ -2,7 +2,7 @@
 
 SIMS Writer 3.3.xをClaude Projectで実行するためのパッケージです。
 
-- Claude Package Version: `3.6.0`
+- Claude Package Version: `3.6.1`
 - Compatible Product: `aWriter 3.6.x`
 - Platform Compatibility: `SIMS Editorial Platform 1.x`
 - Shared Version: `3.5.1`

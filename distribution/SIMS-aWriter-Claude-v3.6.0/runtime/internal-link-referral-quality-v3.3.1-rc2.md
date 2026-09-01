@@ -17,7 +17,7 @@ Writer must read the source article and decide the final placement, surrounding 
 - If a recommended link is not naturally placeable, do not force it; report it as not performed with a plain reason.
 - Human output remains target / Before / After / reason / expected effect.
 
-## Mandatory link implementation gate (v3.6.0)
+## Mandatory link implementation gate (v3.6.1)
 When an internal link is adopted as PUBLIC_OK, the Machine Layer `after` is not complete unless the destination is actually encoded as a clickable link. Mentioning only the anchor text or article title is a FAIL.
 
 - The Machine Layer `after` field must contain the adopted destination URL in the link markup used by the source article (for example an existing HTML `<a href="...">...</a>` style when the article body is HTML).
