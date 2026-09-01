@@ -1,4 +1,5 @@
 # aWriter v3.6.0
+- 実運用確認を反映し、表のHuman Layer Afterは「推奨」ではなく実表レンダリングを必須化。`｜`区切りの疑似表はFAILとします。
 
 ## Human Layer rich-copy support
 - PUBLIC_OKの表を、Human Layerではレンダリング済み表として提示できるようにしました。

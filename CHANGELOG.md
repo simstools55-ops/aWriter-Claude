@@ -1,3 +1,4 @@
+- Hardened table Rich Copy after operational verification: Human Layer table changes must render as actual tables; pseudo tables using pipe-delimited text now fail validation.
 ## v3.6.0 - 2026-09-01
 - Added WYSIWYG rich-copy Human Layer projection for rendered tables and clickable internal links.
 - Kept Machine Layer link markup/URL validation and semantic synchronization.

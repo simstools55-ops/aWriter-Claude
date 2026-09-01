@@ -10,6 +10,8 @@ def test_rich_copy_policy_present():
     assert 'コードフェンスおよびblockquoteで囲まない' in ins
     assert 'Rich Copy / 見たままモード対応（v3.6.0）' in tpl
     assert 'Rich Copy Gate v3.6.0' in val
+    assert '疑似表' in ins
+    assert '実際のレンダリング済み表' in val
     assert 'difference only in markup/rendering representation is not a mismatch' in link
 
 def test_version_360():

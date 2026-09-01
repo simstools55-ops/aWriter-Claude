@@ -247,10 +247,10 @@ Doctor Referralのスコープ制限を説明する必要がある場合は、`�
 内部リンクを採用した変更では、Afterを「リンクを付ける文章案」で終わらせない。After本文そのものにリンク先URLを含む実リンク（元記事がHTMLなら `<a href="URL">アンカー</a>`、Markdownなら `[アンカー](URL)`）を実装する。アンカーテキストのみ、記事名のみ、URLなしのAfterはPUBLIC_OK禁止。利用者へhrefの手作業追加を残さない。最終出力前に採用URLがAfter内に存在することを機械的に照合する。
 
 ### Hatena Visual Mode / Rich Copy Support (v3.6.0)
-- PUBLIC_OKのHuman Layer `After`は、利用者がはてなブログ等のWYSIWYG（見たまま）編集画面へ直接コピーしやすい完成表示を優先する。
+- PUBLIC_OKのHuman Layer `After`は、利用者がはてなブログ等のWYSIWYG（見たまま）編集画面へ直接コピーできる完成表示を原則とする。表・内部リンクは下記のRich Copy要件を必須とする。
 - 通常文章は従来どおり完成文章を表示する。
 - 内部リンクを含むHuman Layer `After`は、アンカーテキストがクリック可能なレンダリング済みリンクとして見える形で提示する。利用者の標準コピペ対象として生の`<a href=...>`や`[anchor](URL)`を見せない。
-- 表を含むHuman Layer `After`は、レンダリング済みの表として提示する。利用者の標準コピペ対象としてHTML tableコードやpipe記法を見せない。
+- 表を含むHuman Layer `After`は、**必ずチャット画面上で実際の表としてレンダリングされる形で提示する**。`A｜B｜C`のような全角/半角pipe区切りの疑似表、HTML tableコード、コードフェンス内Markdown表をHuman Layerの完成形として出してはならない。
 - リンクまたは表を含むHuman Layer `After`のコピー対象部分は、コードフェンスおよびblockquoteで囲まない。チャットUIがリンク/表を実際にレンダリングできる位置へ置く。
 - Machine Layer / Machine Result JSONの`after`は、元記事形式に必要なHTML/Markdown等の実装表現を保持し、内部リンクではdestination URLを必ず保持する。
 - Human LayerとMachine Layerは、文章の意味、リンク先URL、アンカーテキスト、表の見出し・セル内容・順序を一致させる。markup/rendering表現の差だけを不一致とみなさない。

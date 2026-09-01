@@ -34,11 +34,14 @@ DOCTOR_REFERRAL_TREATMENT等の経路であっても、通常Writerより利用�
 - SBM: 次に実行すべき操作と状態を人間向けに表示
 
 ## Rich-copy projection (v3.6.0)
-WriterのHuman Layerでリンクまたは表を含むAfterを提示する場合、WYSIWYGへコピーしやすいレンダリング済み完成形を優先する。
+WriterのHuman Layerでリンクまたは表を含むAfterを提示する場合、WYSIWYGへ直接コピーできるレンダリング済み完成形を必須とする。
 
 - ordinary text → complete text
 - internal link → clickable rendered anchor
-- table → rendered table
+- table → rendered table（必須。`｜`区切り等の疑似表は不可）
+
+
+表を変更・追加するPUBLIC_OKでは、Human LayerのAfterがチャットUI上で**実際の表としてレンダリングされていること**を完成条件とする。全角/半角pipeを区切り文字として並べただけの疑似表は、見たままモードで表構造を保持できないため完成形として扱わない。
 
 リンクまたは表のHuman Layerコピー対象部分はコードフェンスおよびblockquoteで囲まない。Machine Layerで必要なmarkupは保持してよいが、Machine markupをそのままHuman Layerの作業形式にする必要はない。Human/Presentation変換によって文章の意味、リンク先URL、アンカーテキスト、表の見出し・セル内容・順序を変更してはならない。markup/rendering表現の違いだけを不一致とみなしてはならない。
 

@@ -4,9 +4,10 @@
 - Rich-copy regression tests: PASS.
   - Standard targeted suite: 6 passed.
   - Claude targeted suite: 7 passed.
-- Human Layer: rendered tables / clickable internal links allowed for WYSIWYG copy.
+- Human Layer: table changes require actual rendered tables; clickable internal links remain required for WYSIWYG copy.
 - Machine Layer: destination URL and source-format link markup retained.
 - Human rich-copy payloads must not be wrapped in code fences or blockquotes.
+- Operational verification (Hatena Blog visual/WYSIWYG mode): copying the rendered table from the chat UI preserved the table structure successfully. Pipe-delimited pseudo-table text did not; the validator now rejects that form.
 - Existing JSON contracts and Shared v3.5.1 baseline unchanged.
 
 ## Full legacy pytest note

@@ -52,9 +52,12 @@ AfterのHuman Layer表示は、利用者が原則そのままWYSIWYG編集画面
 
 - 通常文章：完成した変更後文章を表示する。
 - 内部リンク：アンカーテキストがクリック可能なレンダリング済みリンクとして表示する。標準コピペ対象に生のHTMLタグやMarkdownリンク記法を表示しない。
-- 表：レンダリング済みの表そのものを表示する。標準コピペ対象にHTML tableコードやMarkdown pipe記法を表示しない。
+- 表：**必ずチャット画面上で実際の表としてレンダリングされる表そのものを表示する。** `A｜B｜C`のような疑似表、HTML tableコード、コードフェンス内Markdown表を完成形として表示しない。
 - リンクまたは表を含むAfterのコピー対象部分は、コードフェンスおよびblockquoteで囲まない。
 - Human Layerでは「HTML版」「Markdown版」「見たまま版」を並列提示しない。
 - Machine Result JSONは元記事形式に必要なmarkupを保持してよい。
 - Human LayerとMachine Layerでは文章の意味、destination URL、アンカー、表の見出し・セル内容・順序を一致させる。markup表現の差だけを不一致とみなさない。
+
+#### 表を変更・追加する場合のAfter表示例
+`**After**` の直後に、コードフェンスやblockquoteを使わず、通常のMarkdown表を置いてチャットUIに実表としてレンダリングさせる。利用者に見える完成形は表そのものとし、pipe文字列を文章として見せない。
 
