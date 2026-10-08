@@ -1,3 +1,5 @@
+> v4.0.0: Manager正規依頼受付ゲートを追加。Claude Project Instructionsの更新が必須。詳細: docs/SIMS_WRITER_REQUEST_GATE_V4.md
+
 # Claude Project更新手順
 
 Version: 0.15.3-alpha.1

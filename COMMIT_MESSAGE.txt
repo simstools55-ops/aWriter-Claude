@@ -1,0 +1,1 @@
+feat(aWriter): add Manager request acceptance gate v4.0.0
